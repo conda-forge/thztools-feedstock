@@ -1,5 +1,5 @@
 {% set name = "thztools" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/thztools-{{ version }}.tar.gz
-  sha256: 74eaa31f50689d913e12a6f779a69d5215a21fadcae30ffad8e012306da8bedc
+  sha256: 7d4ead7eaa02f97f49609acbb547c9e011504051c3ed8e415ed62eacfb395d85
 
 build:
   noarch: python
