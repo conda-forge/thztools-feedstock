@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.21
     - scipy
+    - numdifftools
 
 test:
   imports:
