@@ -1,5 +1,5 @@
 {% set name = "thztools" %}
-{% set version = "0.5.5.post0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/thztools-{{ version }}.tar.gz
-  sha256: 7e1cfe0d73ad100c5cc9eed24499c33f819299428e033a26acd5a4323e4244dc
+  sha256: ce63f5ed44cde7c9ac151a4067e60a840eff22214cf0f7a15befba8e60c2e50b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.21
     - scipy
+    - numdifftools
 
 test:
   imports:
